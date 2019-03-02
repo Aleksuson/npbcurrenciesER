@@ -24,7 +24,8 @@ public class FxmlLoader {
     Parent load(String location) {
         log.debug("Loading FXML from " + location);
 
-        FXMLLoader loader = new FXMLLoader(NBPCurrenciesErApplication.class.getResource(location));
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(NBPCurrenciesErApplication.class.getResource(location));
         loader.setControllerFactory(context::getBean);
 
         Parent parent = null;

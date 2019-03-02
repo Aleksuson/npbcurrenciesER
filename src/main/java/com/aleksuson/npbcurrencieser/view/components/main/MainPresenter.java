@@ -9,16 +9,16 @@ import org.springframework.stereotype.Component;
 @Lazy
 public class MainPresenter implements MainContract.Presenter {
 
-    private MainContract.View mainViewCtrl;
+    private MainContract.View mainView;
 
     public MainPresenter(MainContract.View mainView) {
-        this.mainViewCtrl = mainViewCtrl;
+        this.mainView = mainView;
     }
 
     @Override
     public void showPerson() {
         log.debug("in showPerson");
 
-        mainViewCtrl.display();
+        mainView.display();
     }
 }

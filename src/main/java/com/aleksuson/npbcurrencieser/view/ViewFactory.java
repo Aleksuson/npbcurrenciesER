@@ -10,6 +10,7 @@ import java.util.Map;
 @Slf4j
 @Component
 public class ViewFactory {
+
     private FxmlLoader loader;
     private Map<String, Parent> viewInstances;
 
