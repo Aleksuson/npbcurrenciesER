@@ -1,5 +1,5 @@
 
-package com.aleksuson.npbcurrencieser.domain;
+package com.aleksuson.npbcurrencieser.dto;
 
 import java.util.HashMap;
 import java.util.Map;

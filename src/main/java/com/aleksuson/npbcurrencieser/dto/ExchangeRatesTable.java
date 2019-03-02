@@ -1,11 +1,11 @@
 
-package com.aleksuson.npbcurrencieser.domain;
+package com.aleksuson.npbcurrencieser.dto;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class User {
+public class ExchangeRatesTable {
 
     private String table;
     private String no;
