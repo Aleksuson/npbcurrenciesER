@@ -27,9 +27,8 @@ public class DtoToDomainConverter {
     }
 
     private Function<Rate, CurrencyRate> getRateCurrencyRateFunction(ExchangeRatesTable table) {
-        return rate -> new CurrencyRate(rate.getCurrency(),
-                rate.getCode(),
-                LocalDate.parse(table.getEffectiveDate()));
+        return rate -> new CurrencyRate(rate.getCode(),
+                LocalDate.parse(table.getEffectiveDate()),rate.getMid());
     }
 
 

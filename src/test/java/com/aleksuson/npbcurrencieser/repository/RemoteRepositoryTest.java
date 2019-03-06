@@ -40,7 +40,7 @@ class RemoteRepositoryTest {
         LocalDate startDate = LocalDate.of(2018,1,1);
         LocalDate endDate = LocalDate.of(2018,1,30);
 
-        List<ExchangeRatesTable> exchangeRatesTableList =remoteRepository.getTableFromDateToDate(startDate, endDate, "A");
+        List<ExchangeRatesTable> exchangeRatesTableList = remoteRepository.getTableFromDateToDate(startDate, endDate, "A");
 
         List<CurrencyRate> currencyRates = dtoToDomainConverter.convert(exchangeRatesTableList);
 

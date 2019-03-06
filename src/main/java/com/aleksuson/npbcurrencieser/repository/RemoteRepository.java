@@ -25,7 +25,7 @@ public class RemoteRepository {
 
     public List<ExchangeRatesTable> getTableFromDateToDate(LocalDate fromDate, LocalDate toDate, String TableType) {
 
-        if(ChronoUnit.DAYS.between(fromDate,toDate) > 93) {
+        if(ChronoUnit.DAYS.between(fromDate,toDate) > 94) {
             throw new IllegalArgumentException();
             //todo
         }
