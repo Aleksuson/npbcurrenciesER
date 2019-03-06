@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
 public class BootStrapH2 implements ApplicationListener<ContextRefreshedEvent> {
 
     private final CrudRepository<CurrencyRate,Long> localRepository;
