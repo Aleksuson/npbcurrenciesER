@@ -19,9 +19,7 @@ public class ViewFactory {
         this.viewInstances = new HashMap<>();
     }
 
-    /**
-     * Lazily instantiate a JavaFX Parent Node
-     */
+
     public Parent getView(String view) {
         Parent node = viewInstances.get(view);
 

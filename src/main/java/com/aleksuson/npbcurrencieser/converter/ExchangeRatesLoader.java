@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Component
-public class ERLoader {
+public class ExchangeRatesLoader {
 
     private final DtoToDomainConverter dtoToDomainConverter;
     private final RemoteRepository remoteRepository;
@@ -20,7 +20,7 @@ public class ERLoader {
     private final static LocalDate FIRST_AVAILABLE_CR_DATE = LocalDate.of(2002, 1, 2);
     private final static LocalDate DATE_NOW = LocalDate.now();
 
-    public ERLoader(DtoToDomainConverter dtoToDomainConverter, RemoteRepository remoteRepository) {
+    public ExchangeRatesLoader(DtoToDomainConverter dtoToDomainConverter, RemoteRepository remoteRepository) {
         this.dtoToDomainConverter = dtoToDomainConverter;
         this.remoteRepository = remoteRepository;
     }

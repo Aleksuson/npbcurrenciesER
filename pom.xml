@@ -72,6 +72,21 @@
             <version>2.23.0</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.object-refinery/orson-charts-fx -->
+        <dependency>
+            <groupId>com.object-refinery</groupId>
+            <artifactId>orson-charts-fx</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart-fx</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

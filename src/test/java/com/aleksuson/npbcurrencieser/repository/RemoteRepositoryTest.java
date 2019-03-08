@@ -42,8 +42,6 @@ class RemoteRepositoryTest {
 
         List<ExchangeRatesTable> exchangeRatesTableList = remoteRepository.getTableFromDateToDate(startDate, endDate, "A");
 
-        List<CurrencyRate> currencyRates = dtoToDomainConverter.convert(exchangeRatesTableList);
-
         assertNotNull(exchangeRatesTableList);
     }
 }

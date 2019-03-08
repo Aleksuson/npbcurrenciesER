@@ -1,5 +1,6 @@
 package com.aleksuson.npbcurrencieser;
 
+import com.aleksuson.npbcurrencieser.domain.CurrencyRate;
 import com.aleksuson.npbcurrencieser.view.ViewFactory;
 import com.aleksuson.npbcurrencieser.view.ViewLocation;
 import javafx.application.Application;
@@ -10,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+
+import java.util.List;
 
 @Slf4j
 @SpringBootApplication

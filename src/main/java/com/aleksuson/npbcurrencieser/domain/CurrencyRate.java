@@ -4,10 +4,8 @@ package com.aleksuson.npbcurrencieser.domain;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Data
@@ -20,9 +18,10 @@ public class CurrencyRate {
     private Long Id;
     private String code;
     private LocalDate localDate;
-    private Double rate;
+    @Column(columnDefinition="DECIMAL(19,6)")
+    private BigDecimal rate;
 
-    public CurrencyRate(String code, LocalDate localDate, Double rate) {
+    public CurrencyRate(String code, LocalDate localDate, BigDecimal rate) {
         this.code = code;
         this.localDate = localDate;
         this.rate = rate;

@@ -1,6 +1,7 @@
 
 package com.aleksuson.npbcurrencieser.dto;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,7 +9,7 @@ public class Rate {
 
     private String currency;
     private String code;
-    private Double mid;
+    private BigDecimal mid;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     public String getCurrency() {
@@ -27,11 +28,11 @@ public class Rate {
         this.code = code;
     }
 
-    public Double getMid() {
+    public BigDecimal getMid() {
         return mid;
     }
 
-    public void setMid(Double mid) {
+    public void setMid(BigDecimal mid) {
         this.mid = mid;
     }
 

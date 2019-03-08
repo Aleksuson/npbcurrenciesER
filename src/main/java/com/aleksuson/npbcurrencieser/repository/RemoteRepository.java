@@ -27,7 +27,6 @@ public class RemoteRepository {
 
         if(ChronoUnit.DAYS.between(fromDate,toDate) > 94) {
             throw new IllegalArgumentException();
-            //todo
         }
         String startDate = formatDateToYYYYMMdd(fromDate);
         String endDate = formatDateToYYYYMMdd(toDate);
@@ -39,7 +38,7 @@ public class RemoteRepository {
         return response.getBody();
     }
 
-    private static String formatDateToYYYYMMdd(LocalDate date) {
+    private String formatDateToYYYYMMdd(LocalDate date) {
         DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE;
         return date.format(formatter);
     }

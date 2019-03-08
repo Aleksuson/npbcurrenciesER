@@ -6,8 +6,6 @@ import com.aleksuson.npbcurrencieser.dto.Rate;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,8 +14,6 @@ import java.util.stream.Collectors;
 public class DtoToDomainConverter {
 
     public List<CurrencyRate> convert(List<ExchangeRatesTable> exchangeRatesTables) {
-
-        //DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE;
 
         return exchangeRatesTables.stream()
                 .flatMap(table -> table.getRates()

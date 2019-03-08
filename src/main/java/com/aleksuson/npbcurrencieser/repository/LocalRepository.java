@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface LocalRepository extends CrudRepository<CurrencyRate, Long> {
 
-    List<CurrencyRate> findByCodeAndLocalDateBetween(String currencyCode, LocalDate startDate, LocalDate endDate);
+    List<CurrencyRate> findByCodeAndLocalDateBetweenOrderByLocalDate(String currencyCode, LocalDate startDate, LocalDate endDate);
 
 
 }

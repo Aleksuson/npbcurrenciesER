@@ -17,8 +17,8 @@ public class LocalRepositoryService {
     }
 
 
-    List<CurrencyRate> findCurrencyFromDateToDate(String currencyCode, LocalDate startDate, LocalDate endDate) {
-        return localRepository.findByCodeAndLocalDateBetween(currencyCode, startDate, endDate);
+    public List<CurrencyRate> findCurrencyFromDateToDate(String currencyCode, LocalDate startDate, LocalDate endDate) {
+        return localRepository.findByCodeAndLocalDateBetweenOrderByLocalDate( currencyCode, startDate, endDate);
     }
 
 }
