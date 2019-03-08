@@ -29,8 +29,4 @@ public class BootStrapH2 implements ApplicationListener<ContextRefreshedEvent> {
         localRepository.saveAll(currencyRates);
 
     }
-
-
-
-
 }
